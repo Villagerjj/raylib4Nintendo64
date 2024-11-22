@@ -69,8 +69,8 @@ int main(void)
         // Update
         //-----------------------------------------------------
 
-        joypad_poll();
-        joypad_buttons_t pressed = joypad_get_buttons_pressed(JOYPAD_PORT_1); //this is if you only need when a button is pressed
+        joypad_poll(); //kindly asks the controller whats goin' on
+        //joypad_buttons_t pressed = joypad_get_buttons_pressed(JOYPAD_PORT_1); //this is if you only need when a button is pressed, uncomment if needed
         joypad_buttons_t held = joypad_get_buttons_held(JOYPAD_PORT_1); //when you need to check if a button is held
         joypad_inputs_t inputs = joypad_get_inputs(JOYPAD_PORT_1); //needed to get the joystick/analog stick data
       
