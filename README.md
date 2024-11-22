@@ -16,6 +16,7 @@ Ready to learn? Jump to [code examples!](https://www.raylib.com/examples.html)
 
 Change log
 ===========================
+ - 22/11/2024 Villagerjj added a 3D demo
  - 31/3/2024 Initial raylib4Nintendo64 public release and my 49th birthday :P
  
 
@@ -24,9 +25,12 @@ Change log
   
  - @raysan5 for his amazing work with raylib and raylib has an incredible community developing in the open way!!!! 
  - all people involved in libdragon and homebrew tools and libraries for Nintendo 64.
+ - @Villagerjj for somewhat cool looking 3D demo
 
  
   License
 ===========================
 
 raylib is licensed under an unmodified zlib/libpng license, which is an OSI-certified, BSD-like license that allows static linking with closed source software. Check [LICENSE](LICENSE) for further details.
+
+assets in the 3D model demo are CC0, all created by Villagerjj
