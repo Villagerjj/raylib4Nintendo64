@@ -103,7 +103,7 @@ int main(void)
         //----------------------------------------------------------------------------------
         BeginDrawing(); //tell the N64 that we can start drawing some things (this is where the fun begins)
 
-        //ClearBackground(ColorFromHSV(194.4, 24.9, 85.1)); //used for clearing the screen to prevent weird vertex flickering, you can disable this if you use the functions below.
+        //ClearBackground(ColorFromHSV(194.4, 24.9, 85.1)); //used for clearing the screen in raylib, enabling this prevents weird vertex flickering and screen tearing, you can disable this if you use native opengl functions
 
         //this code does the same thing as the ClearBackground function above, but better :)
         //glClearColor(0.3f, 0.5f, 0.9f, 1.0f); // Sets the color of the void to light blue, only needed if you clear the GL_COLOR_BUFFER_BIT
@@ -111,10 +111,6 @@ int main(void)
         //glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Same as ClearBackground in Raylib, but faster
 
         BeginMode3D(camera); //tells the N64 that its time for cool special drawing functions (3D). you should supply the camera here as well
-
-        glLightModelfv(GL_LIGHT_MODEL_AMBIENT, environment_color); //enables lights :)
-
-
 
 
         glDepthMask (GL_FALSE); //disables the depth check for the following meshes, I recommend you only do this for static, far away objects, like background elements.
