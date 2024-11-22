@@ -43,8 +43,8 @@ int main(void)
 
     // Define the camera to look into our 3d world (position, target, up vector)
     Camera camera = { 0 };
-    camera.position = (Vector3){ 0.0f, 10.0f, 10.0f };    // Camera position
-    camera.target = (Vector3){ 0.0f, 2.0f, 0.0f };      // Camera looking at point
+    camera.position = (Vector3){ 8.90f, 1.40f, 8.22f };    // Camera position
+    camera.target = (Vector3){ 3.65f, 2.35f, 0.35f };       // Camera looking at point
     camera.up = (Vector3){ 0.0f, 1.0f, 0.0f };          // Camera up vector (rotation towards target)
     camera.fovy = 60.0f;                                // Camera field-of-view Y
     camera.projection = CAMERA_PERSPECTIVE;             // Camera projection type
@@ -118,7 +118,10 @@ int main(void)
 
         DrawFPS(15,15); //Raylib's built in FPS counter, draws at pixels 15, 15
 
-
+        //Debugging stuff
+        DrawFPS(15,15); //Raylib's built in FPS counter, draws at pixels 15, 15
+        //DrawText(TextFormat("x = %02.02f, y = %02.02f, z = %02.02f", camera.position.x, camera.position.y, camera.position.z), 15, 32, 20, RED); //used for debugging, prints the camera's current position
+        //DrawText(TextFormat("x = %02.02f, y = %02.02f, z = %02.02f", camera.target.x, camera.target.y, camera.target.z), 15, 48, 20, RED); //used for debugging, prints where the camera is looking, ise useful for following objects
 
         EndDrawing();
         //----------------------------------------------------------------------------------
