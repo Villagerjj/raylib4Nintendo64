@@ -112,7 +112,7 @@ int main(void)
 
         BeginMode3D(camera); //tells the N64 that its time for cool special drawing functions (3D). you should supply the camera here as well
 
-        glLightModelfv(GL_LIGHT_MODEL_AMBIENT, environment_color) //enables lights :)
+        glLightModelfv(GL_LIGHT_MODEL_AMBIENT, environment_color); //enables lights :)
 
 
 
