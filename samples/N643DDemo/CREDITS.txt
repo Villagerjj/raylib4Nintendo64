@@ -1,4 +1,3 @@
-
 Color Palette:
 https://lospec.com/palette-list/jehkoba32
 
@@ -7,3 +6,4 @@ https://opengameart.org/content/grass-textureseamless-2d
 https://opengameart.org/content/water-texture-pack
 https://opengameart.org/content/dirt-001
 https://opengameart.org/content/simple-seamless-tiles-of-dirt-and-sand
+(all adapted, scaled, and recolored using above palette)
